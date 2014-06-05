@@ -6,6 +6,6 @@
   "repository": "https://github.com/jamez14/basicseed",
   "license": "MIT",
   "dependencies": {
-    "": ""
+    "fontawesome": "^4.1.0"
   }
 }
