@@ -1,7 +1,7 @@
 {
   "name": "basicseed",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "basicseed for projects using grunt, bower, fontawesome, and custom SASS",
   "repository": "https://github.com/jamez14/basicseed",
   "license": "MIT",
