@@ -21,6 +21,12 @@ It does a few simple things...
 
 This is the info on the styles included in the `sass` folder.
 
+### Framework styles (_framework.scss)
+
+The "meat and potatoes" of the included styles are contained in the `_framework.scss` file. Here's a little overview...
+
+
+
 ## Directory Layout
 
     root/               --> all of the files
