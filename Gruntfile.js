@@ -19,10 +19,11 @@ grunt.initConfig({
         }
     },
     
-    sass: {
+    compass: {
         dist: {
-            files: {
-                'assets/css/app.css': 'sass/app.scss'
+            options: {
+                sassDir: 'sass',
+                cssDir: 'assets/css'                
             }
         }
     },
