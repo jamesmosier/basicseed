@@ -49,7 +49,7 @@ grunt.initConfig({
     watch: {
         all: {
                 files: ['*.html', 'sass/*.scss'],
-                tasks: ['sass', 'cssmin'],
+                tasks: ['compass', 'cssmin'],
                 options: {
                     livereload: true
             }
@@ -64,7 +64,7 @@ grunt.initConfig({
     }
     });
 
-    grunt.registerTask('build', ['sass', 'cssmin', 'uglify']);
+    grunt.registerTask('build', ['compass', 'cssmin', 'uglify']);
     grunt.registerTask('default', ['build', 'express', 'open', 'watch']);
 
 };

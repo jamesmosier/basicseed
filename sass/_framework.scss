@@ -1,16 +1,15 @@
 $primary-color: #52c69c;
-darken( $primary-color, 10% ) 
-lighten( $primary-color, 10% )
-saturate( $primary-color, 20% ) 
-desaturate( $primary-color, 20% )
-tint( $primary-color, 10% )
-shade( $primary-color, 10% )
-
 $fontfamily: Helvetica, Arial, sans-serif;
 
 
+//----EXAMPLES----
+//darken( $primary-color, 10% )
+// lighten( $primary-color, 10% )
+// saturate( $primary-color, 20% ) 
+// desaturate( $primary-color, 20% )
+// tint( $primary-color, 10% )
+//shade($primary-color, 10%)
 //example usage of color functions: color: darken($primary-color, 20%);
-
 
 
 ::-webkit-scrollbar-thumb {
@@ -72,8 +71,8 @@ body {
 
 html, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: inherit;
-  	font-family: inherit;
-  	line-height: 1.1;  
+	font-family: $fontfamily;
+	line-height: 1.1;  
 }
 
 h1,
@@ -198,6 +197,22 @@ img {
   text-align: justify;
 }
 
+a {
+  background: transparent;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active, &:hover {
+    outline: 0;
+  }
+  &:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
 label {
   display: inline-block;
   margin-bottom: 5px;
@@ -278,38 +293,37 @@ textarea.input-elem-lg {
   cursor: pointer;
 }
 
-//do I wanna use this???
-// .input-elem {
-//   display: block;
-//   width: 100%;
-//   height: 34px;
-//   padding: 6px 12px;
-//   font-size: 14px;
-//   line-height: 1.428571429;
-//   color: #555555;
-//   vertical-align: middle;
-//   background-color: #ffffff;
-//   background-image: none;
-//   border: 1px solid #cccccc;
-//   border-radius: 4px;
-//   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-//   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-//   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-//   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-//   &:focus {
-//     border-color: #66afe9;
-//     outline: 0;
-//     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-//     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-//   }
-//   &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder {
-//     color: #999999;
-//   }
-//   &[disabled], &[readonly] {
-//     cursor: not-allowed;
-//     background-color: #eeeeee;
-//   }
-// }
+.input-elem {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  &:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder {
+    color: #999999;
+  }
+  &[disabled], &[readonly] {
+    cursor: not-allowed;
+    background-color: #eeeeee;
+  }
+}
 
 .button {
   display: inline-block;
@@ -356,8 +370,13 @@ textarea.input-elem-lg {
 
 .button-default {
   color: #FFF;
-  background-color: #5CB85C;
-  border-color: #4CAE4C;
+  background-color: $primary-color;
+  border-color: darken( $primary-color, 10% );
+  &:hover, &:focus, &:active, &.active {
+    color: #FFF;
+    background-color: darken( $primary-color, 10% );
+    border-color: darken( $primary-color, 30% );
+  }
 }
 
 .button-hollow {
@@ -372,9 +391,9 @@ textarea.input-elem-lg {
   width: auto;
   height: auto;
   &:hover {
-    background: rgba(82, 198, 156, 0.18);
+    background: lighten( $primary-color, 10% );
     color: #fff;
-    border-color: #000;
+    border-color: darken( $primary-color, 10% );
     -webkit-transition: -webkit-transform .5s,all .5s;
     -moz-transition: -moz-transform .5s,all .5s;
     transition: transform .5s,all .5s;

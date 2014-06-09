@@ -153,7 +153,7 @@ Inputs and buttons have some specific classes to help you quickly create some go
 
 I'll leave it up to the project to determine the colors of the button, but there is a *basic* button color class for you to adjust:
 
-`.button-primary`
+`.button-default`
 
 There are some `.button` sizes too for you to use...
 
