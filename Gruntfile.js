@@ -19,11 +19,10 @@ grunt.initConfig({
         }
     },
     
-    compass: {
+    sass: {
         dist: {
-            options: {
-                sassDir: 'sass',
-                cssDir: 'assets/css'                
+            files: {
+                'assets/css/app.css': 'sass/app.scss'
             }
         }
     },
@@ -48,8 +47,8 @@ grunt.initConfig({
     // https://github.com/gruntjs/grunt-contrib-watch
     watch: {
         all: {
-                files: ['*.html', 'sass/*.scss'],
-                tasks: ['compass', 'cssmin'],
+                files: ['*.html', 'sass/*.scss', 'docs/*'],
+                tasks: ['sass', 'cssmin'],
                 options: {
                     livereload: true
             }
@@ -64,7 +63,7 @@ grunt.initConfig({
     }
     });
 
-    grunt.registerTask('build', ['compass', 'cssmin', 'uglify']);
+    grunt.registerTask('build', ['sass', 'cssmin', 'uglify']);
     grunt.registerTask('default', ['build', 'express', 'open', 'watch']);
 
 };

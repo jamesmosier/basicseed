@@ -7,32 +7,49 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="prettify.css">
+    <script src="prettify.js"></script>
     <link rel="stylesheet" href="../assets/lib/fontawesome/css/font-awesome.min.css">     
     <link rel="stylesheet" href="../assets/css/app.css">              
     <link rel="stylesheet" href="docs.css">  
 </head>
-<body>
+<body onload="prettyPrint()">
+
+    <header class="heading">
+        <div class="container">
+            <h1>basicseed | <code>&lt;docs&gt;</code></h1>
+             <h4>available on <a href="https://github.com/jamez14/basicseed" target="_blank">GitHub</a>, <a href="http://bower.io/search/?q=basicseed" target="_blank">Bower</a>, &amp; <a href="https://www.npmjs.org/package/basicseed" target="_blank">NPM</a></h4>
+         </div>
+    </header>
+
     <div class="container">
-        <h1>basicseed | docs</h1>
+
         <div class="row">
-            <div class="column small-4">
+            <h3>Inputs, Buttons, etc.</h3>
+            <div class="example-snip">  
+                <p>Default button:</p>              
                 <button type="button" class="button button-default">button default</button>
+                <pre class="prettyprint">&lt;button type="button" class="button-default"&gt;button default&lt;/button&gt;</pre>
             </div>
-            <div class="column small-4">
+            <div class="example-snip">
+                <p>Hollow button:</p>
                 <button type="button" class="button button-hollow">button hollow</button>
+                <pre class="prettyprint">&lt;button type="button" class="button-hollow"&gt;button hollow&lt;/button&gt;</pre>
             </div>
-            <div class="column small-4">
+            <div class="example-snip">
+                <p>input type="text"</p>
                 <label>
                     Text Input
                     <input type="text" class="input-elem">
                 </label>
+                <pre class="prettyprint">&lt;input type="text" class="input-elem"&gt;</pre>
             </div>            
         </div>
 
     </div>
 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->    
     <script src="../assets/js/main.js"></script>
 </body>
 </html>
