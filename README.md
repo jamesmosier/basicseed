@@ -149,6 +149,8 @@ There are some *helper* classes to use when needed...
 
 Inputs and buttons have some specific classes to help you quickly create some good looking elements.
 
+`.input-elem` is a normal text box. Usage would look like this: `<input type="text" class="input-elem">`
+
 `.button` will give you a nice, rounded corner button. 
 
 I'll leave it up to the project to determine the colors of the button, but there is a *basic* button color class for you to adjust:
