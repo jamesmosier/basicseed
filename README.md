@@ -1,4 +1,4 @@
-#basicseed [![Bower version](https://badge.fury.io/bo/basicseed.svg)](http://badge.fury.io/bo/basicseed) <img src="http://img.shields.io/badge/version-0.1.0-blue.svg">
+#basicseed [![Bower version](https://badge.fury.io/bo/basicseed.svg)](http://badge.fury.io/bo/basicseed) [![NPM version](https://badge.fury.io/js/basicseed.svg)](http://badge.fury.io/js/basicseed)
 
 `basicseed` is a starter template for your web based projects. It also includes some basic styles as a starting point for you. 
 
