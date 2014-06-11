@@ -12,7 +12,7 @@ grunt.initConfig({
                 server: "server.js",
                 bases: ['C:\\Git\\basicseed'],
                 //bases: ['Sites/basicseed'],
-                port: 8080,
+                port: 8000,
                 hostname: "0.0.0.0",
                 livereload: true
             }
@@ -58,7 +58,7 @@ grunt.initConfig({
     // https://www.npmjs.org/package/grunt-open
     open: {
         all: {
-            path: 'http://localhost:8080/index.html'
+            path: 'http://localhost:8000/index.html'
         }
     }
     });

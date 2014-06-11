@@ -10,7 +10,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" href="prettify.css">
     <script src="prettify.js"></script>
-    <link rel="stylesheet" href="../assets/lib/fontawesome/css/font-awesome.min.css">     
+
+    <!--List of icons: https://useiconic.com/open -->
+    <link rel="stylesheet" href="../assets/lib/open-iconic/font/css/open-iconic.css">
+    <link rel="stylesheet" href="../assets/lib/wtf-forms/wtf-forms.css">  
     <link rel="stylesheet" href="../assets/css/app.css">              
     <link rel="stylesheet" href="docs.css">  
 </head>
@@ -19,14 +22,17 @@
     <header class="heading">
         <div class="container">
             <h1>basicseed | <code>&lt;docs&gt;</code></h1>
-             <h4>available on <a href="https://github.com/jamez14/basicseed" target="_blank">GitHub</a>, <a href="http://bower.io/search/?q=basicseed" target="_blank">Bower</a>, &amp; <a href="https://www.npmjs.org/package/basicseed" target="_blank">NPM</a></h4>
+             <h4>available on <a href="https://github.com/jamez14/basicseed" target="_blank">GitHub</a>, 
+                <a href="http://bower.io/search/?q=basicseed" target="_blank">Bower</a>, &amp; 
+                <a href="https://www.npmjs.org/package/basicseed" target="_blank">NPM</a>
+            </h4>
          </div>
     </header>
 
     <div class="container">
 
         <div class="row">
-            <h3>Inputs, Buttons, etc.</h3>
+            <h3>Inputs, Buttons, etc.<img src="/open-iconic/svg/arrow-circle-right.svg"></h3>
             <div class="example-snip">  
                 <p>Default button:</p>              
                 <button type="button" class="button button-default">button default</button>
@@ -45,6 +51,59 @@
                 </label>
                 <pre class="prettyprint">&lt;label&gt;<div class="indent">&lt;input type="text" class="input-elem"&gt;</div>&lt;/label&gt;</pre>
             </div>            
+        </div>
+
+        <div class="row">
+
+            <div class="example-snip">
+                <!--use <div class="controls-stacked"> or in a <form>-->
+                <label class="control checkbox">
+                  <input type="checkbox">
+                  <span class="control-indicator"></span>
+                  Check this custom checkbox
+                </label>
+            </div>
+
+            <div class="example-snip">
+                <label class="control radio">
+                  <input type="radio" id="radio1" name="radio">
+                  <span class="control-indicator"></span>
+                  Toggle this custom radio
+                </label>
+                <label class="control radio">
+                  <input type="radio" id="radio2" name="radio">
+                  <span class="control-indicator"></span>
+                  Or toggle this other custom radio
+                </label>
+            </div>
+
+            <div class="example-snip">
+                <label class="select">
+                  <select>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </label>
+            </div>
+
+            <div class="example-snip">
+                <div class="controls-stacked">
+                    <progress class="progress" value="25" max="100">
+                      25%
+                    </progress>
+                    <progress class="progress" value="50" max="100">
+                      50%
+                    </progress>
+                    <progress class="progress" value="75" max="100">
+                      75%
+                    </progress>
+                    <progress class="progress" value="100" max="100">
+                      100%
+                    </progress>
+                </div>
+            </div>
         </div>
 
     </div>
