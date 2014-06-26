@@ -22,7 +22,8 @@ grunt.initConfig({
     sass: {
         dist: {
             files: {
-                'assets/css/app.css': 'sass/app.scss'
+                'assets/css/app.css': 'sass/app.scss',
+                'assets/css/lemonade.css': 'sass/lemonade/lemonade.scss'
             }
         }
     },
@@ -30,7 +31,7 @@ grunt.initConfig({
     cssmin: {
       combine: {
         files: {
-          'assets/css/app.min.css': ['assets/css/app.css']
+          'assets/css/app.min.css': ['assets/css/lemonade.css', 'assets/css/app.css']
         }
       }
     },
@@ -58,7 +59,7 @@ grunt.initConfig({
     // https://www.npmjs.org/package/grunt-open
     open: {
         all: {
-            path: 'http://localhost:8000/index.html'
+            path: 'http://localhost:8000/docs/index.html'
         }
     }
     });
