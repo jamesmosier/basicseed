@@ -1,7 +1,7 @@
 {
   "name": "basicseed",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "basicseed for projects using grunt, bower, fontawesome, and custom SASS",
   "repository": "https://github.com/jamez14/basicseed",
   "license": "MIT",
@@ -21,8 +21,7 @@
     "bower": "^1.3.4",
     "matchdep": "~0.3.0",
     "grunt": "~0.4.5",
-    "grunt-express": "^1.3.5",
-    "grunt-open": "~0.2.3",
+    "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-cssmin": "^0.9.0",
     "grunt-contrib-uglify": "~0.4.0",

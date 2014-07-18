@@ -195,6 +195,5 @@ Lastly with buttons, there is a `.button-hollow` class that gives you the ever-p
       LICENSE           --> MIT license
       package.json      --> registers Grunt plugin dependencies
       README.md         --> it's what you are reading, right now!
-      server.js         --> basic express server for development purposes
 
 

@@ -2,23 +2,24 @@ module.exports = function(grunt) {
 // Load Grunt tasks declared in the package.json file
 require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-//GOT IT FROM HERE: http://thecrumb.com/2014/03/15/using-grunt-for-live-reload/
+//example taken from: http://thecrumb.com/2014/03/15/using-grunt-for-live-reload/
 grunt.initConfig({
     
-    // https://github.com/blai/grunt-express
-    express: {
-        all: {
-            options: {
-                server: "server.js",
-                bases: ['C:\\Git\\basicseed'],
-                //bases: ['Sites/basicseed'],
-                port: 8000,
-                hostname: "0.0.0.0",
-                livereload: true
-            }
+    //https://github.com/gruntjs/grunt-contrib-connect
+    connect: {
+        server: {
+          options: {
+            port: 3000,
+            base: '<%= build_dir %>',
+            // Change this to '0.0.0.0' to access the server from outside.
+            hostname: 'localhost',
+            livereload: true,
+            open: true
+          }
         }
     },
     
+    //https://github.com/gruntjs/grunt-contrib-sass
     sass: {
         dist: {
             files: {
@@ -28,6 +29,7 @@ grunt.initConfig({
         }
     },
 
+    //https://github.com/gruntjs/grunt-contrib-cssmin
     cssmin: {
       combine: {
         files: {
@@ -54,18 +56,12 @@ grunt.initConfig({
                     livereload: true
             }
         }
-    },
-    
-    // https://www.npmjs.org/package/grunt-open
-    open: {
-        all: {
-            path: 'http://localhost:8000/docs/index.html'
-        }
     }
+
     });
 
     grunt.registerTask('build', ['sass', 'cssmin', 'uglify']);
-    grunt.registerTask('default', ['build', 'express', 'open', 'watch']);
+    grunt.registerTask('default', ['build', 'connect', 'watch']);
 
 };
     
