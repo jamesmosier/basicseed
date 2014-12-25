@@ -2,9 +2,9 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "assets/css"
+css_dir = "dist/css"
 sass_dir = "sass"
-images_dir = "assets/img"
+images_dir = "dist/img"
 javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):

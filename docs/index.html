@@ -12,10 +12,8 @@
     <script src="prettify.js"></script>
 
     <!--List of icons: https://useiconic.com/open -->
-    <link rel="stylesheet" href="../assets/lib/open-iconic/font/css/open-iconic.css">
-    <link rel="stylesheet" href="../assets/lib/wtf-forms/wtf-forms.css">  
-    <link rel="stylesheet" href="../assets/css/lemonade.css">
-    <link rel="stylesheet" href="../assets/css/app.css">
+    <!-- <link rel="stylesheet" href="../assets/lib/open-iconic/font/css/open-iconic.css"> -->
+    <link rel="stylesheet" href="../dist/css/app.css">
     <link rel="stylesheet" href="docs.css">  
 </head>
 <body onload="prettyPrint()">
@@ -33,7 +31,7 @@
     <div class="container">
 
         <div class="row">
-            <h3>Inputs, Buttons, etc.<img src="/open-iconic/svg/arrow-circle-right.svg"></h3>
+            <h3>Inputs, Buttons, etc.<span class="oi" data-glyph="arrow-circle-right" title="arrow-circle-right" aria-hidden="true"></span></h3>
             <div class="example-snip">  
                 <p>Default button:</p>              
                 <button type="button" class="button button-default">button default</button>
@@ -54,62 +52,11 @@
             </div>            
         </div>
 
-        <div class="row">
-
-            <div class="example-snip">
-                <!--use <div class="controls-stacked"> or in a <form>-->
-                <label class="control checkbox">
-                  <input type="checkbox">
-                  <span class="control-indicator"></span>
-                  Check this custom checkbox
-                </label>
-            </div>
-
-            <div class="example-snip">
-                <label class="control radio">
-                  <input type="radio" id="radio1" name="radio">
-                  <span class="control-indicator"></span>
-                  Toggle this custom radio
-                </label>
-                <label class="control radio">
-                  <input type="radio" id="radio2" name="radio">
-                  <span class="control-indicator"></span>
-                  Or toggle this other custom radio
-                </label>
-            </div>
-
-            <div class="example-snip">
-                <label class="select">
-                  <select>
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </label>
-            </div>
-
-            <div class="example-snip">
-                <div class="controls-stacked">
-                    <progress class="progress" value="25" max="100">
-                      25%
-                    </progress>
-                    <progress class="progress" value="50" max="100">
-                      50%
-                    </progress>
-                    <progress class="progress" value="75" max="100">
-                      75%
-                    </progress>
-                    <progress class="progress" value="100" max="100">
-                      100%
-                    </progress>
-                </div>
-            </div>
-        </div>
+        
 
     </div>
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->    
-    <script src="../assets/js/main.js"></script>
+    <script src="../dist/js/main.js"></script>
 </body>
 </html>

@@ -5,8 +5,5 @@
   "description": "basicseed for projects using grunt, bower, fontawesome, and custom SASS",
   "repository": "https://github.com/jamez14/basicseed",
   "license": "MIT",
-  "keywords": ["seed", "css", "framework", "responsive", "sass", "html", "web", "front-end", "frontend"],
-  "dependencies": {
-    "open-iconic": "^1.1.0"
-  }
+  "keywords": ["seed", "css", "framework", "responsive", "sass", "html", "web", "front-end", "frontend"]
 }
