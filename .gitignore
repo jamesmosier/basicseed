@@ -27,8 +27,6 @@ node_modules
 assets/lib
 .sass-cache
 
-.sass-cache/2ebae6e4b3ce85a5a2a636d27cc630461743f47f/_framework.scssc
-.sass-cache/2ebae6e4b3ce85a5a2a636d27cc630461743f47f/_grid.scssc
-.sass-cache/2ebae6e4b3ce85a5a2a636d27cc630461743f47f/_mixins.scssc
-.sass-cache/2ebae6e4b3ce85a5a2a636d27cc630461743f47f/_normalize.scssc
-.sass-cache/2ebae6e4b3ce85a5a2a636d27cc630461743f47f/app.scssc
+
+docs/_site
+docs/.sass_cache

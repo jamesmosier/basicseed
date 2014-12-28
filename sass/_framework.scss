@@ -344,6 +344,8 @@ textarea.input-elem-lg {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .button-lg {

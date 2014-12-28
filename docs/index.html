@@ -1,62 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>basicseed | docs</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>    
-    <link rel="stylesheet" href="prettify.css">
-    <script src="prettify.js"></script>
+<div class="home">
 
-    <!--List of icons: https://useiconic.com/open -->
-    <!-- <link rel="stylesheet" href="../assets/lib/open-iconic/font/css/open-iconic.css"> -->
-    <link rel="stylesheet" href="../dist/css/app.css">
-    <link rel="stylesheet" href="docs.css">  
-</head>
-<body onload="prettyPrint()">
+  <h1 class="page-heading">Posts</h1>
 
-    <header class="heading">
-        <div class="container">
-            <h1>basicseed | <code>&lt;docs&gt;</code></h1>
-             <h4>available on <a href="https://github.com/jamez14/basicseed" target="_blank">GitHub</a>, 
-                <a href="http://bower.io/search/?q=basicseed" target="_blank">Bower</a>, &amp; 
-                <a href="https://www.npmjs.org/package/basicseed" target="_blank">NPM</a>
-            </h4>
-         </div>
-    </header>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <div class="container">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <div class="row">
-            <h3>Inputs, Buttons, etc.<span class="oi" data-glyph="arrow-circle-right" title="arrow-circle-right" aria-hidden="true"></span></h3>
-            <div class="example-snip">  
-                <p>Default button:</p>              
-                <button type="button" class="button button-default">button default</button>
-                <pre class="prettyprint">&lt;button type="button" class="button-default"&gt;button default&lt;/button&gt;</pre>
-            </div>
-            <div class="example-snip">
-                <p>Hollow button:</p>
-                <button type="button" class="button button-hollow">button hollow</button>
-                <pre class="prettyprint">&lt;button type="button" class="button-hollow"&gt;button hollow&lt;/button&gt;</pre>
-            </div>
-            <div class="example-snip">
-                <p>Text Input</p>
-                <label>
-                    this is a label
-                    <input type="text" class="input-elem">
-                </label>
-                <pre class="prettyprint">&lt;label&gt;<div class="indent">&lt;input type="text" class="input-elem"&gt;</div>&lt;/label&gt;</pre>
-            </div>            
-        </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-        
-
-    </div>
-
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->    
-    <script src="../dist/js/main.js"></script>
-</body>
-</html>
+</div>
