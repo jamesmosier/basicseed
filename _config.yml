@@ -2,8 +2,8 @@
 title: basicseed
 email: james@jamesdmosier.com
 description: basicseed is a starting point for new projects, another framework
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://basicseed.github.io" # the base hostname & protocol for your site
+baseurl: "/basicseed/" # the subpath of your site, e.g. /blog/
+url: "http://jamez14.github.io" # the base hostname & protocol for your site
 twitter_username: jamez14
 github_username:  jamez14
 
@@ -12,8 +12,8 @@ markdown: kramdown
 permalink: pretty
 
 # Server
-source:           docs
-encoding:         UTF-8
-destination: docs/_site
+source:			docs
+encoding:		UTF-8
+destination: 	docs/_site
 
 distcss: css/basicseed.css

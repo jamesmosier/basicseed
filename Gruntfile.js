@@ -60,10 +60,16 @@ module.exports = function(grunt) {
 
         copy: {
             main: {
-              files: [
-                { src: ['fonts/*'], dest: 'dist/' },
-                { src: ['dist/css/*'], dest: 'docs/_site/css/', flatten: true, filter: 'isFile', expand: true }
-              ]
+                files: [{
+                    src: ['fonts/*'],
+                    dest: 'dist/'
+                }, {
+                    src: ['dist/css/*'],
+                    dest: 'docs/_site/css/',
+                    flatten: true,
+                    filter: 'isFile',
+                    expand: true
+                }]
             },
         },
 
@@ -81,6 +87,14 @@ module.exports = function(grunt) {
         clean: [
             'docs/_site'
         ],
+
+        'gh-pages': {
+            options: {
+                base: 'docs/_site'
+            },
+            src: '**/*'
+            //src: ['docs/_site/**']
+        }
 
     });
 
