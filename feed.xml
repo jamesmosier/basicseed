@@ -3,10 +3,10 @@
   <channel>
     <title>basicseed</title>
     <description>basicseed is a starting point for new projects, another framework</description>
-    <link>http://basicseed.github.io/</link>
-    <atom:link href="http://basicseed.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Dec 2014 14:55:45 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Dec 2014 14:55:45 -0500</lastBuildDate>
+    <link>http://jamez14.github.io/basicseed//</link>
+    <atom:link href="http://jamez14.github.io/basicseed//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 28 Dec 2014 15:10:54 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Dec 2014 15:10:54 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Sun, 28 Dec 2014 08:55:32 -0500</pubDate>
-        <link>http://basicseed.github.io/jekyll/update/2014/12/28/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://basicseed.github.io/jekyll/update/2014/12/28/welcome-to-jekyll/</guid>
+        <link>http://jamez14.github.io/basicseed//jekyll/update/2014/12/28/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://jamez14.github.io/basicseed//jekyll/update/2014/12/28/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
