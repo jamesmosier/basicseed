@@ -10,10 +10,11 @@ github_username:  jamez14
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: rouge
 
 # Server
 source:			docs
 encoding:		UTF-8
 destination: 	docs/_site
 
-distcss: css/basicseed.css
+distcss: /css/basicseed.css

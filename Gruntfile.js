@@ -76,8 +76,8 @@ module.exports = function(grunt) {
         // https://github.com/gruntjs/grunt-contrib-watch
         watch: {
             all: {
-                files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_plugins/*', 'docs/_posts/*', 'css/basicseed.css', 'docs/index.html', 'docs/partials/*.html', 'docs/partials/examples/*.html'],
-                tasks: ['sass', 'cssmin', 'jekyll'],
+                files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_plugins/*', 'docs/_posts/*', 'css/basicseed.css', 'docs/index.html', 'docs/partials/*.html', 'docs/partials/examples/*.html', 'docs/_sass/*.scss'],
+                tasks: ['sass', 'cssmin', 'jekyll', 'copy'],
                 options: {
                     livereload: true
                 }
@@ -97,6 +97,9 @@ module.exports = function(grunt) {
         }
 
     });
+
+    //run grunt gh-pages to generate branch and push to that branch
+    //changes visible at http://jamez14.github.io/basicseed
 
     grunt.registerTask('buildjekyll', ['sass', 'cssmin', 'uglify', 'jekyll', 'copy']);
     grunt.registerTask('default', ['buildjekyll', 'connect', 'watch']);
