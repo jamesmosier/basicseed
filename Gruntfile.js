@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         // https://github.com/gruntjs/grunt-contrib-watch
         watch: {
             all: {
-                files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_plugins/*', 'docs/_posts/*', 'css/basicseed.css', 'docs/index.html', 'docs/partials/*.html', 'docs/partials/examples/*.html', 'docs/_sass/*.scss'],
+                files: ['*.html', 'sass/*.scss', 'sass/**/*.scss', 'docs/_includes/partials/*', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_plugins/*', 'docs/_posts/*', 'css/basicseed.css', 'docs/index.html', 'docs/partials/*.html', 'docs/partials/examples/*.html', 'docs/_sass/*.scss'],
                 tasks: ['sass', 'cssmin', 'jekyll', 'copy'],
                 options: {
                     livereload: true
